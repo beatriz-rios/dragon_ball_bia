@@ -1,0 +1,51 @@
+*{
+    background-image: url(../_imagens/Dragon-Ball-Goku-Free-PNG-HQ-Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-color: rgb(133, 36, 182);
+    background-size: 30%;
+}
+h1{
+    color: rgb(211, 177, 28);
+    text-align: center;
+    border-style: dotted;
+    font-family: monospace,sans-serif;
+    border-radius: 10px;
+}
+input{
+    background-color: white;
+}
+fieldset{
+    border-color: yellow;
+}
+.espaço{
+    height: 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+form{
+    color: white;
+}
+#planeta{
+    color: black;
+    background-color: white;
+}
+#raças{
+    color: black;
+    background-color: white;
+}
+#area{
+    background-color: white;
+}
+#area{
+    height: 100px;
+    width: 70%;
+}
+.botao{
+    background-color: blueviolet;
+    color:white;
+    height: 60px;
+    width: 150px;
+    border-radius: 10%;
+}

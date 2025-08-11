@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Superaçaiajin</title>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+
+<body>
+    <h1>Formulário Superaçaiajin</h1>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            Nome:<br>
+            <input type="text" name="Nome" class="espaço">
+            <br> Idade:<br>
+            <input type="number" name="Idade" class="espaço">
+            <br> Telefone: <br>
+            <input type="number" name="Telefone" class="espaço">
+            <br> Endereço: <br>
+            <input type="text" name="endereço" class="espaço">
+            <br> Planeta de Origem: <br>
+            <select id="planeta" >
+                <option>Planeta Terra</option>
+                <option>Planeta Namekusei</option>
+                <option>O Planeta Vegeta</option>
+                <option>Outros</option>
+            </select>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Dados extras:</legend>
+            Raça do Universo 7 preferida:
+            <select id="raças">
+                <option>Terráqueo</option>
+                <option>Saiyajins</option>
+                <option>Anjos
+                <option>Namekuseijin</option>
+                <option>Outros</option>
+            </select>
+            <br>
+            <label>Trabalho:</label>
+            <input type="radio" name="join">Autonomo
+            <input type="radio" name="join">Empregado CLT
+            <input type="radio" name="join">Empresário
+            <input type="radio" name="join">Tipo Goku
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Seu açai é perfeito de que jeito?</legend>
+            <input type="checkbox">Puro
+            <input type="checkbox">Com Banana
+            <input type="checkbox">Com Morango
+            <input type="checkbox">Com Granola
+            <input type="checkbox">Tem gosto de Terra
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Qual o tamanho preferido?</legend>
+            <input type="radio" name="lol">500ml
+            <input type="radio" name="lol">300ml
+            <input type="radio" name="lol">100ml
+            <input type="radio" name="lol">Casquinha
+            <input type="radio" name="lol">Qual parte do gosto de terra que você não entendeu?
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            Observações: <br>
+            <textarea id="area">Escreva suas observações...Eu gosto de açai porque...</textarea>
+        </fieldset>
+    </form>
+    <form>
+        <input type="button" name="enviar" value="Enviar" class="botao">
+        <input type="submit" name="limpar" value="Limpar" class="botao">
+    </form>
+</body>
+</html>
