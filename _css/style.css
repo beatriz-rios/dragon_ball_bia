@@ -16,11 +16,37 @@ h1{
 input{
     background-color: white;
 }
+input[type=text],
+input[type=number]{
+    padding: 6px 8px;
+    width: 1200px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+input[type=text]:focus,
+input[type=number]:focus{
+    background-color: lightpink;
+}
 fieldset{
     border-color: yellow;
 }
-.espaço{
-    height: 20px;
+#nome{
+ height: 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+#idade{
+ height: 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+#telefone{
+ height: 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+#endereco{
+ height: 20px;
     width: 60%;
     border-radius: 5px;
 }
@@ -43,6 +69,13 @@ form{
     width: 70%;
 }
 .botao{
+    background-color: blueviolet;
+    color:white;
+    height: 60px;
+    width: 150px;
+    border-radius: 10%;
+}
+#jsonn{
     background-color: blueviolet;
     color:white;
     height: 60px;

@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Superaçaiajin</title>
     <link rel="stylesheet" href="_css/style.css">
+    <script src="_js/formulario2.js"></script>
 </head>
 
 <body>
     <h1>Formulário Superaçaiajin</h1>
-    <form>
+    <form method="get" action="confirmacao.html">
         <fieldset>
             <legend>Dados pessoais</legend>
             Nome:<br>
-            <input type="text" name="Nome" class="espaço">
+            <input type="text" name="Nome" id="nome" required>
             <br> Idade:<br>
-            <input type="number" name="Idade" class="espaço">
+            <input type="number" name="Idade" id="idade" required>
             <br> Telefone: <br>
-            <input type="number" name="Telefone" class="espaço">
+            <input type="number" name="Telefone" id="telefone" required>
             <br> Endereço: <br>
-            <input type="text" name="endereço" class="espaço">
+            <input type="text" name="endereco" id="endereco" required>
             <br> Planeta de Origem: <br>
-            <select id="planeta" >
+            <select id="planetas" required>
                 <option>Planeta Terra</option>
                 <option>Planeta Namekusei</option>
                 <option>O Planeta Vegeta</option>
@@ -34,41 +35,43 @@
         <fieldset>
             <legend>Dados extras:</legend>
             Raça do Universo 7 preferida:
-            <select id="raças">
+            <select id="raças" required>
                 <option>Terráqueo</option>
                 <option>Saiyajins</option>
-                <option>Anjos
+                <option>Anjos</option>
                 <option>Namekuseijin</option>
                 <option>Outros</option>
             </select>
             <br>
-            <label>Trabalho:</label>
-            <input type="radio" name="join">Autonomo
-            <input type="radio" name="join">Empregado CLT
-            <input type="radio" name="join">Empresário
-            <input type="radio" name="join">Tipo Goku
+            <label name="cargo" id="trabalho" required>Trabalho:</label>
+            <input type="radio" name="cargo" required>Autonomo
+            <input type="radio" name="cargo" required>Empregado CLT
+            <input type="radio" name="cargo" required>Empresário
+            <input type="radio" name="cargo" required>Tipo Goku
         </fieldset>
     </form>
 
     <form>
-        <fieldset>
+        <fieldset name="sabor" id="sabor" required>
             <legend>Seu açai é perfeito de que jeito?</legend>
-            <input type="checkbox">Puro
-            <input type="checkbox">Com Banana
-            <input type="checkbox">Com Morango
-            <input type="checkbox">Com Granola
-            <input type="checkbox">Tem gosto de Terra
+            <input type="checkbox" name="sabor">Puro
+            <input type="checkbox" name="sabor">Com Banana
+            <input type="checkbox" name="sabor">Com Morango
+            <input type="checkbox" name="sabor">Com Granola
+            <input type="checkbox" name="sabor">Tem gosto de Terra
         </fieldset>
     </form>
 
     <form>
-        <fieldset>
+        <fieldset name="tamanho" id="tamanho" required>
+
             <legend>Qual o tamanho preferido?</legend>
-            <input type="radio" name="lol">500ml
-            <input type="radio" name="lol">300ml
-            <input type="radio" name="lol">100ml
-            <input type="radio" name="lol">Casquinha
-            <input type="radio" name="lol">Qual parte do gosto de terra que você não entendeu?
+
+            <input type="radio" name="tamanho" required>500ml
+            <input type="radio" name="tamanho" required>300ml
+            <input type="radio" name="tamanho" required>100ml
+            <input type="radio" name="tamanho" required>Casquinha
+            <input type="radio" name="tamanho" required>Qual parte do gosto de terra que você não entendeu?
         </fieldset>
     </form>
 
@@ -79,8 +82,10 @@
         </fieldset>
     </form>
     <form>
-        <input type="button" name="enviar" value="Enviar" class="botao">
-        <input type="submit" name="limpar" value="Limpar" class="botao">
+        <input type="submit" name="enviar" value="Enviar" class="botao">
+        <input type="reset" name="limpar" value="Limpar" class="botao">
+        <input type="button" onclick="json()" value="Gerar JSON" id="jsonn">
     </form>
 </body>
+
 </html>
